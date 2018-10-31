@@ -34,18 +34,20 @@ h1 {
 }
 .header{
     height: 97vh;
-    background-image: linear-gradient(to right bottom, rgba(5, 96, 153, 0.7), rgba(202, 6, 18, 0.7)),
-    url(../img/IMG_5961.jpg) ;
+    background-image: linear-gradient(to right bottom, rgba(5, 96, 153, 0.6),
+    rgba(202, 6, 18, 0.7)),
+    url(../img/IMG_5961.jpg);
     background-size: cover; /*beholder størrelsen*/
     background-position: top; /*always stays on the top*/
     clip-path: polygon(0 7vh, 100% 0, 100% 90vh, 0 100%);
     position: relative;
+    border-radius: 8px;
     }
 
-/*logo venstre hjørne*/
+/*logo left foreningen*/
     .logo-box-left{
       position: absolute;
-      top: 70px;
+      top: 90px;
       left: 70px;
     }
     .logo-lbf{
@@ -53,10 +55,11 @@ h1 {
       width: auto;
     }
 
-    /*logo højre hjørne*/
+
+    /*logo right kræmmermarked*/
     .logo-box-right{
       position: absolute;
-      bottom: 70px;
+      bottom: 90px;
       right: 70px;
     }
     .logo-lk{
@@ -68,28 +71,97 @@ h1 {
     .heading-primary{
       color: #222;
       text-transform: uppercase;
+      backface-visibility: hidden; /*ungår rystelser i animation*/
+      margin-bottom: 10px;
     }
 
     .heading-main{
-      display:block;
-      font-size: 30px;
-      font-weight: 400px;
+      display: block;
+      font-size: 26px;
+      font-weight: 600;
+
+    animation-name: moveInLeft;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
     }
     #text-box-left{
     position:absolute;
     top: 28%;
-    left: 8%;
+    left: 4%;
     }
 
     .heading-sub{
       display:block;
-      font-size: 30px;
-      font-weight: 400px;
+      font-size: 26px;
+      font-weight: 600;
+      animation: moveInRight 1.5s ease-out;
+      /*  animation-name: moveInRight;
+        animation-duration: 1.5s;
+        animation-timing-function: ease-out;
+      */
     }
     #text-box-right{
     position:absolute;
     bottom: 28%;
-    right: 10%;
-    padding-left: 8%;
+    right: 4%;
+    padding-left: 4%;
     }
 /*overskrifter slutter*/
+
+    /*animation starter*/
+    @keyframes moveInLeft {
+    0% {
+        opacity:0;
+        transform:translateX(-100px);
+    }
+    80% {
+        transform:translateX(10px);
+
+    }
+    100 {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    }
+
+    @keyframes moveInRight {
+    0% {
+        opacity:0;
+        transform:translateX(100px);
+    }
+    80% {
+          transform:translateX(-10px);
+
+    }
+    100 {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    }
+    /*
+animation slutter
+*/
+
+/*buttons*/
+.btn{
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 7px;
+}
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 7px 10px;
+    display: inline-block;
+}
+.btn-blue {
+  background-color: #222222;
+  color: #0885D5;
+  align-items: center;
+}
+
+.btn-red {
+  background-color: #222222;
+  color: #CA0612;
+}
