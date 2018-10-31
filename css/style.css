@@ -1,0 +1,95 @@
+/*
+COLORS:
+
+Light green: #7ed56f;
+Medium green: #55c57a;
+Dark green: #28b485;
+blue: #2b75ba;
+another blue: #265e9e;
+dark blue: #11486f;
+
+light blue: #27ade3;
+
+red: #c93632;
+red: #CA0612; blue: #056099; blue:#0885D5
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #222222;
+    padding:20px;
+}
+h1 {
+  font-size: 2em;
+}
+.header{
+    height: 97vh;
+    background-image: linear-gradient(to right bottom, rgba(5, 96, 153, 0.7), rgba(202, 6, 18, 0.7)),
+    url(../img/IMG_5961.jpg) ;
+    background-size: cover; /*beholder størrelsen*/
+    background-position: top; /*always stays on the top*/
+    clip-path: polygon(0 7vh, 100% 0, 100% 90vh, 0 100%);
+    position: relative;
+    }
+
+/*logo venstre hjørne*/
+    .logo-box-left{
+      position: absolute;
+      top: 70px;
+      left: 70px;
+    }
+    .logo-lbf{
+      height: 100px;
+      width: auto;
+    }
+
+    /*logo højre hjørne*/
+    .logo-box-right{
+      position: absolute;
+      bottom: 70px;
+      right: 70px;
+    }
+    .logo-lk{
+      height: 100px;
+      width: auto;
+    }
+
+/*overskifter starter*/
+    .heading-primary{
+      color: #222;
+      text-transform: uppercase;
+    }
+
+    .heading-main{
+      display:block;
+      font-size: 30px;
+      font-weight: 400px;
+    }
+    #text-box-left{
+    position:absolute;
+    top: 28%;
+    left: 8%;
+    }
+
+    .heading-sub{
+      display:block;
+      font-size: 30px;
+      font-weight: 400px;
+    }
+    #text-box-right{
+    position:absolute;
+    bottom: 28%;
+    right: 10%;
+    padding-left: 8%;
+    }
+/*overskrifter slutter*/
