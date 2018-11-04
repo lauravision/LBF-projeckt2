@@ -1,0 +1,110 @@
+/*colors:
+mørk blå #004463 rgba(0,68,99,0.9);
+
+
+*/body{
+  margin:0;
+  padding:0;
+  font-family: "Lato", sans-serif;
+  background: #ffffff;
+  background-size: cover;
+}
+.kommentar{
+  padding-top: 1em;
+  font-size: .75em;
+  float: left;
+}
+.stjerne{
+  color: #03a9f4;
+}
+.login-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 380px;
+  padding: 30px;
+  background: rgba(0,68,99,0.9);
+  box-sizing: border-box;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+}
+.login-box h2 {
+  margin: 10px 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+
+.login-box p{
+  font-size: .9em;
+  margin: 10px 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+.bold{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.login-box .input-box{
+  position: relative;
+}
+.login-box .input-box input{
+  width: 100%;
+  height: auto;
+  padding: 5px 0;
+  font-size: 1em;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: solid 1px;
+  outline: none;
+  background: transparent;
+}
+.login-box .input-box label{
+  position: absolute;
+  top: 0;
+  left:0;
+  padding: 4px 0;
+  font-size: 1em;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+.login-box .input-box input:focus ~ label,
+.login-box .input-box input:valid ~ label
+{
+  top: -20px;
+  left:0;
+  color: #1284DF;
+  font-size: .8em;
+}
+.login-box input[type="submit"]
+{
+  background: transparent;
+  border:none;
+  outline: none;
+  color: #ffffff;
+  background: #1284DF;
+  padding: 10px 20px;
+  margin: 10px 0 20px 0;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.ikoner{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      position: absolute;
+      top: -50px;
+      left: calc(50% - 50px);
+  }
+  .forgot{
+    color: #000;
+    margin-bottom: 10px;
+    font-size: .8em;
+}
