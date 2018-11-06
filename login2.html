@@ -10,16 +10,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Exo+2:400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
-    <link rel="stylesheet" href="css/login.css">
-<script>
-function validateForm() {
-    var x = document.forms["myForm"]["fname"].value;
-    if (x == "") {
-        alert("Name must be filled out");
-        return false;
-    }
-}
-</script>
+    <link rel="stylesheet" href="css/login2.css">
   </head>
   <body>
       <div class ="login-box">
@@ -27,8 +18,7 @@ function validateForm() {
           <h2> MEDLEMS LOGIN</h2>
           <p>Indtast dit brugernavn og adgangskode<span class="stjerne">*</span>
           </p>
-            <form name="myForm" action="bekr.html"
-onsubmit="return validateForm()" method="post">
+          <form>
               <div class = "input-box">
                   <input type = "text" name="" required="">
                   <label>Brugernavn</label>
@@ -43,8 +33,8 @@ onsubmit="return validateForm()" method="post">
               <input type="submit" name="" value="Log ind">
           </form>
           <p class= "kommentar"><span class="stjerne">*</span>Har du ikke login oplysninger
-            skal du kontakte:</br>
-            <span class= "bold">Karsten Andersen</span></br>
+            skal du kontakte:<br>
+            <span class= "bold">Karsten Andersen</span><br>
                                 <span class="stjerne">karsten.leth@gmail.com</span>
           </p>
       </div>

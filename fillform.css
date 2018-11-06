@@ -1,0 +1,64 @@
+@import "compass/css3";
+
+.select-fancy {
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+  position: relative;
+  border-radius: 5px;
+  width: 100px;
+  overflow: hidden;
+  box-shadow: inset 0 -2px 5px rgba(255, 255, 255, 0.4);
+
+  &, > * {
+    cursor: pointer;
+  }
+
+  select {
+    @include box-sizing(content-box);
+
+    background: transparent;
+    border: 0;
+    outline: 0;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
+    padding: 6px 0 6px 8px;
+    font-size: 12px;
+    width: 120%;
+    height: 17px;
+
+
+    -webkit-user-select: none;
+       -moz-user-select: -moz-none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-appearance: none;
+       -moz-appearance: radio-container;
+            appearance: none;
+
+  }
+}
+
+.select-fancy-noimage {
+  @include background(linear-gradient(#fff, #E7E7E7));
+  &:after {
+    content: '';
+    width: 0;
+    position: absolute;
+    right: 7px;
+    top: 50%;
+    margin-top: -3px;
+    border-width: 6px 4px;
+    border-style: solid;
+    pointer-events: none;
+    border-color: #656565 transparent transparent transparent;
+  }
+}
+
+
+//unrelated styles
+body {
+  font-family: arial;
+}
+h3 {
+  font-weight: 400;
+}
