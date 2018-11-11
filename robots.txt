@@ -1,0 +1,4 @@
+User-agent: Googlebot
+disallow: 
+
+sitemap: http://www.taggecreations.com/sitemap.xml
