@@ -4,7 +4,7 @@
   --left-button-hover-color: rgba(0, 157, 224, 1);
   --left-button-hover-animation: rgba(0, 0, 0, 0.8);
   --right-bg-color: rgba(161, 11, 11, 0.6);
-  --right-button-hover-color: rgba(161, 11, 11, 0.9);
+  --right-button-hover-color: rgba(161, 11, 11, 1);
   --hover-width: 92%;
   --other-width: 8%;
   --speed: 2000ms;
@@ -51,14 +51,14 @@ h2.forside-h2{
   position: absolute;
   left: 50%;
   top: 50%;
-  height: 2rem;
+  height:2em;
   padding-top: .86rem;
-  width: 8rem;
+  width: 8em;
   text-align: center;
   color: #ffffff;
   background-color: rgba(0, 157, 224, 0.8);
   border: rgba(0, 157, 224, 0) solid 0rem;
-  font-size: 1rem;
+  font-size: 1.3em;
   text-decoration: none;
   transform: translateX(-50%);
   border-radius: 4px;
@@ -68,14 +68,13 @@ h2.forside-h2{
   position: absolute;
   left: 50%;
   top: 50%;
-  height: 2rem;
+  height: 2em;
   padding-top: .86rem;
-  width: 8rem;
+  width: 8em;
   text-align: center;
   color: #ffffff;
   background-color: rgba(161, 11, 11, 0.8);
-  border: rgba(161, 11, 11, 0) solid 0rem;
-  font-size: 1rem;
+  font-size: 1.3em;
   text-decoration: none;
   transform: translateX(-50%);
   border-radius: 4px;
@@ -95,20 +94,20 @@ h2.forside-h2{
     font-size: 1.2rem;
   }
   .button {
-    width: 8em;
+    width: 6em;
   }
 }
 
 
 @media(max-width: 800px) {
   h1.forside-h1 {
-    font-size: 1rem;
+    font-size: 1em;
   }
   h2.forside-h2 {
-    font-size: .8rem;
+    font-size: .8em;
   }
   .button {
-    width: 8em;
+    width: 4em;
   }
 }
 

@@ -6,7 +6,7 @@
     <meta name="description" content="Langeskoc borgerforening log ind">
 	  <meta name="keywords" content="Langeskov, Borgerforening, login">
   	<meta name="author" content="Lauravision">
-    <title>Langeskov Borgerforeningen | Velkommen</title>
+    <title>Langeskov Borgerforeningen | Bliv medlem</title>
 
   	 <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,700">
@@ -15,88 +15,79 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
     <link rel="stylesheet" href="assets/css/login2.css">
     <link rel="stylesheet" href="assets/css/fillform.css">
+
+
+
+
+    <script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
   </head>
   <body>
 
-    <form id="signUpForm" action="bekr.html" method="GET">
+
+
       <div class ="login-box">
         <img src="" class ="">
-          <h2>OPRET MEDLEMSKABET</h2>
-          <form>
-              <div class = "input-box-half">
-                  <input type = "text" name="" required="">
+          <h2 style="padding:5px;">OPRET MEDLEMSKABET</h2>
+          <h3 style ="padding: 5px 0 40px 0; color:#1AA2D3;" >For kun 125kr. om året pr hele familien!</h3>
+
+          <form name="myForm" action="tilmeldt.html"
+onsubmit="return validateForm()" method="post">
+              <div class = "input-box column1">
+                  <input type ="text" name="" required="">
                   <label>Navn</label>
               </div>
-              <input class = "input-box-half">
-                  <input type = "text" name="firstname" placeholder="Fornavn" required">
-              <div class = "input-box-half">
-                  <input type = "text" name="" required="">
+              <div class = "input-box column2">
+                  <input type ="text" name="" required="">
+                  <label>Efternavn</label>
+              </div>
+              <div class = "input-box column1">
+                  <input type ="text" name="" required="">
                   <label>Adresse</label>
               </div>
-              <div class = "input-box-half">
+              <div class = "input-box column2">
                   <input type="text" name="" required ="pattern="[0-9 0-9 0-9 0-9]{4}"">
                   <label>Postnummer</label>
               </div>
-              <div class = "input-box">
+              <div class = "input-box column1">
                   <input type = "tel" name="" required="">
                   <label>Telefonnumer</label>
               </div>
-              <div class = "input-box">
+              <div class = "input-box column2">
                   <input type = "email" name="" required="">
                   <label>E-mail</label>
               </div>
-              <div class = "input-box">
+              <div class = "input-box column1">
                   <input type = "number" name="" required="">
-                  <label>Antal voksne pr husstand</label>
-
-
-
-                  <form id="signUpForm" action="bekr.html" method="GET">
-                      <input class="inputBox first" type="text" name="firstname" placeholder="Fornavn" required>
-                      <input class="inputBox first" type="text" name="lastname" placeholder="Efternavn" required>
-                      <input class="inputBox second" type="text" name="address" placeholder="Adresse" required>
-                          <select class="dropdown small" name="postnr" required>
-                              <option>Post Nr.</option>
-                              <option value="5550">5550 Langeskov</option>
-                          </select>
-                      <input class="inputBox third" type="email" name="email" placeholder="E-mail" required>
-                      <input class="inputBox first" type="phone" name="phone" placeholder="Tlf. Nr." required>
-
-                      <label for="dropdown" id="dropdownHeading">I hustanden er der:</label>
-                      <br>
-                      <select name="Voksne" class="dropdown second" required>
-                          <option selected value="0">0 voksne</option>
-                          <option value="1">1 voksen</option>
-                          <option value="2">2 voksne</option>
-                          <option value="3">3 voksne</option>
-                          <option value="4">4 voksne</option>
-                          <option value="5">5 voksne</option>
-                          <option value="6">6 voksne</option>
-                      </select>
-                      <select name="Børn" class="dropdown second"required>
-                          <option selected value="0">0 børn</option>
-                          <option value="1">1 barn</option>
-                          <option value="2">2 børn</option>
-                          <option value="3">3 børn</option>
-                          <option value="4">4 børn</option>
-                          <option value="5">5 børn</option>
-                          <option value="6">6 børn</option>
-
-                      </select>
-                        <div class="checkBox"><input type="checkbox"><span> Tilmeld nyhedsbrev.</span></div>
-                          <div class="checkBox"><input type="checkbox" required><span> Jeg har læst og accepterer betingelserne for medlemskab og betaling.</span></div>
-                      <button type="submit" class="largeBtn submit">Gå til betaling <i class="fa fa-chevron-right"></i></button>
-                    </form>
-
-
+                  <label>Voksne pr husstand</label>
                </div>
-<!--<select>
+               <div class = "input-box column2">
+                   <input type = "number" name="" required="">
+                   <label>Børn pr husstand</label>
+                </div>
 
+<!--<select>
    <option>1</option>
    <option>2</option>
    <option>3</option>
    <option>4</option>
 </select>-->
+              <div class="form-group column1">
+                <div class="form-checkbox">
+                  <label class="form-checkbox__label">
+                    <input class="form-checkbox__input" type="checkbox">
+                    <span class="form-checkbox__text">Ja, tak til nyhedsbrev!</span>
+                  </label>
+                </div>
+              </div>
+
               <div class="form-group">
                 <div class="form-checkbox">
                   <label class="form-checkbox__label">
@@ -106,17 +97,14 @@
                 </div>
               </div>
 
-              <div class="form-group">
-                <div class="form-checkbox">
-                  <label class="form-checkbox__label">
-                    <input class="form-checkbox__input" type="checkbox">
-                    <span class="form-checkbox__text">Ja, tak til nyhedsbrev!</span>
-                  </label>
-                </div>
-              </div>
-              <input type="submit" name="" value="Send >">
+              <input type="submit" name="" value="Send">
           </form>
       </div>
+      <script>
 
+        function arrowClicked(){
+          document.location.href = 'home.html';
+        }
+      </script>
   </body>
   </html>
